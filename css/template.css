@@ -1,0 +1,49 @@
+body {
+/*whole background*/
+background-image: url('/img/background.png');
+}
+.post {
+/*background for post container*/
+background-image: url('/img/post_background.png');
+color: #000000;
+padding: 2%;
+}
+a:link{
+/*set link color*/
+color: #;
+}
+a:visited{
+/*set visited color*/
+color: #;
+}
+
+/*nav settings*/
+/*  #ebebeb = writting
+    #274410 = visited
+    #458B00 = background(rest) */
+.navbar-default {
+    background-color:#458B00;border-color:transparent
+}
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{
+    color:#ebebeb;background-color:#274410
+}
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{
+    color:#ebebeb;background-color:#274410
+}
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+    background-color:#274410
+}
+.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus{
+    background-color:#274410;color:#ebebeb
+}
+@media (max-width:767px){
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color:#ebebeb
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus{
+        color:#ebebeb;background-color:#274410
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>.active>a,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus{
+        color:#ebebeb;background-color:#274410
+    }
+}
