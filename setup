@@ -8,5 +8,17 @@ if [[ $confirmation == "y" ]]; then
         rm "LICENSE";
         rm "README.md";
     fi
+    read -p "remove all git files?(y/n)" rmgit
+    if [[ $rmgit == "y" ]]; then
+        rm -rf ".git";
+    fi
+    read -p "add site directories?(y/n)"  dirsetup
+    if [[ $dirsetup == "y" ]]; then
+        while [[ $mkfolder != -s ]]; do
+            read -p "enter the name of a directories until you are done, then type \"-s\"" mkfolder
+            mkdir $mkfolder;
+        done
+    rm -rf "-s";
+
 
 fi
