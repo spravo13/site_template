@@ -20,6 +20,7 @@ if [[ $confirmation == "y" ]]; then
 " mkfolder
             mkdir $mkfolder;
         done
+        rm -rf "stopdir";
     fi
 
 fi
