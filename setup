@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+read -p "start set up?(y/n)" confirmation
+
+if [[ $confirmation == "y" ]]; then
+    read -p "remove \"LICENSE\" and \"README.md\"?(y/n)" clean
+    if [[ $clean == "y" ]]; then
+        rm "LICENSE";
+        rm "README.md";
+    fi
+
+fi
