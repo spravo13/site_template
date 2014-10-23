@@ -26,7 +26,7 @@ if [[ $confirmation == "y" ]]; then
 \
 " mkfolder
             mkdir $mkfolder;
-            $index >> "$mkfolder/index.php";
+            echo $index >> "$mkfolder/index.php";
         done
         rm -rf "stopdir";
     fi
