@@ -1,7 +1,11 @@
 site_template
 =============
 
-A basic website template I have created to base websites I create off of.
+This file started off as "A basic website template I have created to base websites I create off of." but there have been many additions since then. It now has a setup file which will walk through many of tedious time consuming tasks.
+
+## Setup
+
+Simply start the `setup` script and it will walk you through getting all the basics of your site set up.
 
 ## Contributing
 
