@@ -30,9 +30,11 @@ if [[ $confirmation == "y" ]]; then
 \
 " mkfolder
             mkdir $mkfolder;
+            if [[ $mkfolder != "stopdir" ]]; then
             read -p "would you like to add a basic index file in the new directory?(y/n)" conf
             if [[ $conf == "y" ]]; then
                 echo -e $index >> "$mkfolder/index.php";
+            fi
             fi
         done
         rm -rf "stopdir";
