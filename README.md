@@ -1,7 +1,7 @@
 site_template
 =============
 
-This file started off as "A basic website template I have created to base websites I create off of." but there have been many additions since then. It now has a setup file which will walk through many of tedious time consuming tasks.
+This file started off as "A basic website template I have created to base websites I create off of." but there have been many additions since then. It now has a setup file which will walk through many of tedious time consuming tasks such as creating directories and removing git files.
 
 ## Setup
 
