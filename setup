@@ -3,14 +3,18 @@
 read -p "start set up?(y/n)" confirmation
 
 if [[ $confirmation == "y" ]]; then
+    if [[ -f "LICENSE" && -f "README.md" ]]; then
     read -p "remove \"LICENSE\" and \"README.md\"?(y/n)" clean
     if [[ $clean == "y" ]]; then
         rm "LICENSE";
         rm "README.md";
     fi
+    fi
+    if [[ -d ".git" ]]; then
     read -p "remove all git files?(y/n)" rmgit
     if [[ $rmgit == "y" ]]; then
         rm -rf ".git";
+    fi
     fi
     read -p "add site directories?(y/n)"  dirsetup
     if [[ $dirsetup == "y" ]]; then
