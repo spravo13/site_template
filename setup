@@ -22,13 +22,19 @@ if [[ $confirmation == "y" ]]; then
 
             include_once($_SERVER['DOCUMENT_ROOT'].\"/inc/footer.inc.php\"); \n
             ?>";
-            read -p "enter the name of a directories until you are done, then type \"stopdir\"
+            read -p "enter the name of a directory. When you're done type: \"stopdir\"
 \
 " mkfolder
             mkdir $mkfolder;
-            echo -e $index >> "$mkfolder/index.php";
+            read -p "would you like to add a basic index file in the new directory?(y/n)" conf
+            if [[ $conf == "y" ]]; then
+                echo -e $index >> "$mkfolder/index.php";
+            fi
         done
         rm -rf "stopdir";
     fi
-
+    read -p "would you like to have a basic robots.txt file created?(y/n)" robots
+    if [[ $robots == "y" ]]; then 
+        echo -e "User-agent: * \n \n sitemap: " >> "robots.txt";
+    fi
 fi
