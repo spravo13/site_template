@@ -5,7 +5,7 @@ This file started off as "A basic website template I have created to base websit
 
 ## Setup
 
-Simply start the `setup` script(./setup in terminal) and it will walk you through getting all the basics of your site set up.
+Simply start the `setup` script (in bash) and it will walk you through getting all the basics of your site set up.
 
 ## Contributing
 
