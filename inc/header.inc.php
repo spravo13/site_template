@@ -107,7 +107,7 @@ else {
                 </p>
 			</div>
         <h5 class="text-muted">
-        <a href="/"><img src="/img/shrub-header.png" border="0" id="logo" height="30%" width="50%"></a>
+        <a href="/"><img src="/img/header.png" border="0" id="logo" height="30%" width="50%"></a>
 			<!--lower code for sign-in-->
             <!--<div class="pull-right" align="right">
                 </p>
